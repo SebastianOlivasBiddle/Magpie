@@ -1,3 +1,5 @@
+package activity5;
+
 import java.util.Random;
 
 /**
@@ -20,7 +22,7 @@ public class Magpie5
 	 */	
 	public String getGreeting()
 	{
-		return "Hello, let's talk.";
+		return "Hey its me Aaron Rodgers, are you a Wide Reciever?";
 	}
 	
 	/**
@@ -35,12 +37,24 @@ public class Magpie5
 		String response = "";
 		if (statement.length() == 0)
 		{
-			response = "Say something, please.";
+			response = "Uhh Hello? I need to get back to being the most overrated QB in the NFL";
 		}
 
 		else if (findKeyword(statement, "no") >= 0)
 		{
 			response = "Why so negative?";
+		}
+		else if (findKeyword(statement, "name") >= 0)
+		{
+			response = "My name is Aaron Rodgers, but some people like to call me Aaron Fraudgers";
+		}
+		else if (findKeyword(statement, "famous") >= 0)
+		{
+			response = "Im A QB for the Green Bay Packers, and I'm known for being owned by Jimmy G";
+		}
+		else if (findKeyword(statement, "married") >= 0)
+		{
+			response = "I've had a few girlfriends, but I prefer to just be alone...";
 		}
 		else if (findKeyword(statement, "mother") >= 0
 				|| findKeyword(statement, "father") >= 0
