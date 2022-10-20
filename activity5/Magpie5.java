@@ -42,9 +42,9 @@ public class Magpie5
 
         else if (findKeyword(statement, "no") >= 0)
         {
-            response = "Why so negative?";
+            response = "well, long story short I got owned by Jimmy G";
         }
-        else if (findKeyword(statement, "kids") >= 0)
+        else if (findKeyword(statement, "yes") >= 0)
         {
             response = "Yeah, I choked in the playoffs once again...";
         }
@@ -54,18 +54,18 @@ public class Magpie5
         }
         else if (findKeyword(statement, "famous") >= 0)
         {
-            response = "Im A QB for the Green Bay Packers, and I'm known for being owned by Jimmy G";
+            response = "Im the Quarterback for the Green Bay Packers, not as good as Kirk Cousins though";
         }
         else if (findKeyword(statement, "married") >= 0)
         {
-            response = "I've had a few girlfriends, but I prefer to just be alone...";
+            response = "I've had a few girlfriends, but I've never been married... I actually don't talk to any of my family!";
         }
         else if (findKeyword(statement, "mother") >= 0
                 || findKeyword(statement, "father") >= 0
                 || findKeyword(statement, "sister") >= 0
                 || findKeyword(statement, "brother") >= 0)
         {
-            response = "I hate my family and don't talk to them. But please, tell me more about your family";
+            response = "I hate my family and don't talk to them.";
         }
 
         // Responses which require transformations
