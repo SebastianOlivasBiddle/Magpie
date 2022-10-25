@@ -22,7 +22,7 @@ public class Magpie5
      */    
     public String getGreeting()
     {
-        return "Hey its me Aaron Rodgers... Hey, did you watch the playoffs last year?";
+        return "Hey its me, Aaron Rodgers";
     }
     
     /**
@@ -39,22 +39,21 @@ public class Magpie5
         {
             response = "Uhh Hello? I need to get back to being the most overrated QB in the NFL";
         }
-
-        else if (findKeyword(statement, "no") >= 0)
-        {
-            response = "well, long story short I got owned by Jimmy G";
-        }
-        else if (findKeyword(statement, "yes") >= 0)
-        {
-            response = "Yeah, I choked in the playoffs once again...";
-        }
         else if (findKeyword(statement, "name") >= 0)
         {
-            response = "My name is Aaron Rodgers, but some people like to call me Aaron Fraudgers";
+            response = "My name is Aaron Rodgers!";
         }
         else if (findKeyword(statement, "famous") >= 0)
         {
-            response = "Im the Quarterback for the Green Bay Packers, not as good as Kirk Cousins though";
+            response = "Im the Quarterback for the Green Bay Packers";
+        }
+        else if (findKeyword(statement, "born") >= 0)
+        {
+            response = "I was born in Chico, California";
+        }
+        else if (findKeyword(statement, "live") >= 0)
+        {
+            response = "Im the Quarterback for the Green Bay Packers";
         }
         else if (findKeyword(statement, "married") >= 0)
         {
